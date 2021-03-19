@@ -1,0 +1,21 @@
+.innerWrapper form label,
+.innerWrapper form a {
+	font-size: .875rem;
+}
+.innerWrapper form input::placeholder {
+	font-size: .875rem;
+}
+.form-check-input {
+	height: 17px;
+    width: 17px;
+    margin-top: .19rem;
+}
+.innerWrapper form .pwdShow {
+	position: absolute;
+	top: 69%;
+    right: 1%;
+	transform: translate(-50%, -50%);
+}
+.innerWrapper .form-check span {
+	padding: 0 .3rem;
+}
