@@ -2,7 +2,7 @@
   Usability: To display the error message;
 
   Class Name: error;
-  Usability: To bring the red outline on input fields when entered wrong input;
+  Usability: To bring the red outline on inpupt fields when entered wrong input;
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
@@ -73,7 +73,7 @@ img {
 .btn {
 	display: block;
 	width: 100%;
-	background: var(--brand-color-blue);
+	background: #307DF6;
 	color: #fff;
 	margin: 20px 0;
 	font-weight: 600;
@@ -84,11 +84,23 @@ img {
 	color: #fff;
 }
 .innerWrapper form .form-check-label {
-	color: var(--brand-color-blue);
+	color: #307DF6;
 }
 .innerWrapper h3 span {
 	display: block;
 	font-size: .875rem;
 	font-weight: 400;
 	padding: .5rem 0;
+}
+.area-left {
+	position: relative;
+}
+.area-left .fGalleryText {
+	position: absolute;
+    top: 5%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+}
+.area-left .fGalleryText h3 {
+	color: #fff;
 }
