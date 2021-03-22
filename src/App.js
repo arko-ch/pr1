@@ -8,13 +8,13 @@ import { Security, SecureRoute } from "@okta/okta-react";
 class App extends Component {
   render() {
     return(
-      <BrowserRouter>
-        <Security >
+      // <BrowserRouter>
+      //   <Security >
       <div className="App">
         <Login/>
       </div>
-        </Security>
-      </BrowserRouter>
+      //   </Security>
+      // </BrowserRouter>
     )
   }
 
