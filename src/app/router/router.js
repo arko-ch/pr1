@@ -2,15 +2,15 @@ import React, { Fragment } from 'react';
 import { Redirect, Route, Link } from 'react-router-dom';
 import { Store as AuthStore } from '../auth/store';
 import path from 'path';
-
+import OldRoutes from '../../Layout/OldRoutes';
 import dashboard from '../dashboard/routes';
 import auth from '../auth/routes';
 //import mailbox from '../mailbox/routes';
 //import contacts from '../contacts/routes';
 //import property from '../property/routes';
 //import tasks from '../tasks/routes';
-import assignemail from '../assignemail/routes'
-import mailbox from '../entitled/Email/routes'
+import assignemail from '../assignemail/routes';
+import mailbox from '../entitled/Email/routes';
 
 function prefixRoutePath(path, routes) {
   return routes.map(r => {
@@ -40,12 +40,7 @@ const routes = [
     path: '/who',
     title: 'Who',
     component: WhoAmI
-  },
-
-
-
-
-
+  }
 ];
 
 // ------------------
@@ -122,6 +117,7 @@ export function AllRoutes() {
       {filteredRoutes.map((route, i) => {
         return <Route exact key={i} {...route} />;
       })}
+      <Route exact path="/" render={() => <Redirect to="/mailbox" />} />
     </Fragment>
   );
 }

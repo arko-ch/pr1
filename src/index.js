@@ -10,7 +10,7 @@ import './assets/_App.css';
 import './Test.scss';
 
 // todo: deprecate
-//import OldRoutes from './Layout/OldRoutes';
+// import OldRoutes from './Layout/OldRoutes';
 import { Provider } from 'react-redux';
 import Store from './stores/Stores';
 
@@ -41,7 +41,6 @@ const SuspenseFallback = (
 );
 
 const renderApp = Component => {
-
   ReactDOM.render(
     <Provider store={Store}>
       <GlobalProvider>
@@ -54,7 +53,7 @@ const renderApp = Component => {
                     <div className="ash app-theme-white app-container body-tabs-shadow-btn">
                       <Layout {...config.layout.components}>
                         <AppRoutes />
-                       {/*  <OldRoutes /> */}
+                        {/* <OldRoutes /> */}
                       </Layout>
                       <ToastContainer />
                       <ModalContainer />

@@ -13,7 +13,6 @@ class AppMain extends Component {
         {/* <Routes></Routes> */}
         {/*<Route path='/login' layout={{'content.fullPage': true}} render={() => <Login/>} />*/}
         <Route exact path="/" render={() => <Redirect to="/dashboard" />} />
-   
       </Fragment>
     );
   }

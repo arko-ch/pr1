@@ -57,14 +57,14 @@ export default function Login() {
   return (
     <div className="h-100">
       <Row className="h-100 no-gutters">
-        <Col lg="4" className="d-none d-lg-block">
+        {/* <Col lg="4" className="d-none d-lg-block">
           <div className="slider-light">
             <Slider {...settings}>
               <div className="h-100 d-flex justify-content-center align-items-center bg-plum-plate">
                 <div
                   className="slide-img-bg"
                   style={{
-                    backgroundImage: 'url(' + bg1 + ')'
+                    backgroundImage: 'url(' + bg1 + ')',
                   }}
                 />
                 <div className="slider-content">
@@ -74,7 +74,7 @@ export default function Login() {
               </div>
             </Slider>
           </div>
-        </Col>
+        </Col> */}
         <Col
           lg="8"
           md="12"
