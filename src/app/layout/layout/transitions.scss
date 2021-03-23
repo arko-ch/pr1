@@ -1,0 +1,16 @@
+.ash-panel.ash-enabled,
+.ash-content {
+  transition: all 0.3s ease;
+}
+
+.ash-panel.ash-off-canvas {
+  transition: transform 0.3s ease;
+}
+
+.ash-navbar.ash-top {
+  transition: none;
+}
+
+.ash-overlay {
+  transition: opacity 0.9s ease;
+}

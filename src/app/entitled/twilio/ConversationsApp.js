@@ -1,0 +1,271 @@
+import React from 'react';
+import { Badge, Icon, Layout, Spin, Typography } from 'antd';
+import { Client as ConversationsClient } from '@twilio/conversations';
+
+import './assets/Conversation.css';
+import './assets/ConversationSection.css';
+import { ReactComponent as Logo } from './assets/twilio-mark-red.svg';
+
+import Conversation from './Conversation';
+import LoginPage from './LoginPage';
+import { ConversationsList } from './ConversationsList';
+import { HeaderItem } from './HeaderItem';
+import { Library as Icons, FontAwesomeIcon } from '../app/icons';
+import config from '../app/config/config';
+const twilioConfig = config.auth.twilio;
+const { Content, Sider, Header } = Layout;
+const { Text } = Typography;
+
+class ConversationsApp extends React.Component {
+  constructor(props) {
+    super(props);
+
+    const name = localStorage.getItem('name') || '';
+    const loggedIn = name !== '';
+
+    this.state = {
+      name: 'entitled',
+      loggedIn: true,
+      token: null,
+      statusString: null,
+      conversationsReady: false,
+      conversations: [],
+      selectedConversationSid: null,
+      newMessage: ''
+    };
+  }
+
+  componentDidMount = () => {
+    // if (this.state.loggedIn) {
+    this.getToken();
+    this.setState({ statusString: 'Fetching credentials…' });
+    // }
+  };
+
+  logIn = name => {
+    if (name !== '') {
+      localStorage.setItem('name', name);
+      this.setState({ name, loggedIn: true }, this.getToken);
+    }
+  };
+
+  logOut = event => {
+    if (event) {
+      event.preventDefault();
+    }
+
+    this.setState({
+      name: 'entitled',
+      loggedIn: true,
+      token: '',
+      conversationsReady: false,
+      messages: [],
+      newMessage: '',
+      conversations: []
+    });
+
+    localStorage.removeItem('name');
+    this.conversationsClient.shutdown();
+  };
+
+  getToken = () => {
+    // Paste your unique Chat token function
+
+    const AccessToken = require('twilio').jwt.AccessToken;
+    const ChatGrant = AccessToken.ChatGrant;
+
+    // Used when generating any kind of tokens
+    const twilioAccountSid = twilioConfig.twilioAccountSid;
+    const twilioApiKey = twilioConfig.twilioApiKey;
+    const twilioApiSecret = twilioConfig.twilioApiSecret;
+
+    // Used specifically for creating Chat tokens
+    const serviceSid = 'ISc612d08af8c4426a88ff896f5c8435a7';
+    const identity = 'entitled';
+
+    // Create a "grant" which enables a client to use Chat as a given user,
+    // on a given device
+    const chatGrant = new ChatGrant({
+      serviceSid: serviceSid
+    });
+
+    // Create an access token which we will sign and return to the client,
+    // containing the grant we just created
+    const token = new AccessToken(
+      twilioAccountSid,
+      twilioApiKey,
+      twilioApiSecret,
+      { identity: identity }
+    );
+
+    token.addGrant(chatGrant);
+
+    // Serialize the token to a JWT string
+    // console.log(token.toJwt());
+
+    const myToken = token.toJwt();
+    //'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzIzMDI0NTNhZGY5NWI4ZGYyODU4YThmOTlkMDY5MmMyLTE2MDc1MTI2ODQiLCJncmFudHMiOnsiaWRlbnRpdHkiOiJlbnRpdGxlZCIsImNoYXQiOnsic2VydmljZV9zaWQiOiJJU2M2MTJkMDhhZjhjNDQyNmE4OGZmODk2ZjVjODQzNWE3In19LCJpYXQiOjE2MDc1MTI2ODQsImV4cCI6MTYwNzUxNjI4NCwiaXNzIjoiU0syMzAyNDUzYWRmOTViOGRmMjg1OGE4Zjk5ZDA2OTJjMiIsInN1YiI6IkFDNjY0ODQ4ZjY0ZTgzNTg0MDBkYzVhYzQwYWZkNDk0ZmQifQ.63kT35evl6QhIHHOQxGi7GWya8Msl8QXBs_mYCZV86g';
+    this.setState({ token: myToken }, this.initConversations);
+  };
+
+  initConversations = async () => {
+    window.conversationsClient = ConversationsClient;
+    this.conversationsClient = await ConversationsClient.create(
+      this.state.token
+    );
+    this.setState({ statusString: 'Connecting to Twilio…' });
+
+    this.conversationsClient.on('connectionStateChanged', state => {
+      if (state === 'connecting')
+        this.setState({
+          statusString: 'Connecting to Twilio…',
+          status: 'default'
+        });
+      if (state === 'connected') {
+        this.setState({
+          statusString: 'You are connected.',
+          status: 'success'
+        });
+      }
+      if (state === 'disconnecting')
+        this.setState({
+          statusString: 'Disconnecting from Twilio…',
+          conversationsReady: false,
+          status: 'default'
+        });
+      if (state === 'disconnected')
+        this.setState({
+          statusString: 'Disconnected.',
+          conversationsReady: false,
+          status: 'warning'
+        });
+      if (state === 'denied')
+        this.setState({
+          statusString: 'Failed to connect.',
+          conversationsReady: false,
+          status: 'error'
+        });
+    });
+    this.conversationsClient.on('conversationJoined', conversation => {
+      this.setState({
+        conversations: [...this.state.conversations, conversation]
+      });
+    });
+    this.conversationsClient.on('conversationLeft', thisConversation => {
+      this.setState({
+        conversations: [
+          ...this.state.conversations.filter(it => it !== thisConversation)
+        ]
+      });
+    });
+  };
+
+  render() {
+    const { conversations, selectedConversationSid, status } = this.state;
+    const selectedConversation = conversations.find(
+      it => it.sid === selectedConversationSid
+    );
+
+    let conversationContent;
+    if (selectedConversation) {
+      conversationContent = (
+        <Conversation
+          conversationProxy={selectedConversation}
+          myIdentity={this.state.name}
+        />
+      );
+    } else if (status !== 'success') {
+      conversationContent = 'Loading your conversation!';
+    } else {
+      conversationContent = '';
+    }
+
+    if (this.state.loggedIn) {
+      return (
+        <div className="conversations-window-wrapper">
+          <Layout className="conversations-window-container">
+            <Header
+              style={{ display: 'flex', alignItems: 'center', padding: 0 }}
+            >
+              <div
+                style={{
+                  maxWidth: '250px',
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'center'
+                }}
+              >
+                <HeaderItem style={{ paddingRight: '0', display: 'flex' }}>
+                  <Logo />
+                </HeaderItem>
+                <HeaderItem>
+                  <Text strong style={{ color: 'white' }}>
+                    Conversations
+                  </Text>
+                </HeaderItem>
+              </div>
+              <div style={{ display: 'flex', width: '100%' }}>
+                <HeaderItem>
+                  <Text strong style={{ color: 'white' }}>
+                    {selectedConversation &&
+                      (selectedConversation.friendlyName ||
+                        selectedConversation.sid)}
+                  </Text>
+                </HeaderItem>
+                <HeaderItem style={{ float: 'right', marginLeft: 'auto' }}>
+                  <span
+                    style={{ color: 'white' }}
+                  >{` ${this.state.statusString}`}</span>
+                  <Badge
+                    dot={true}
+                    status={this.state.status}
+                    style={{ marginLeft: '1em' }}
+                  />
+                </HeaderItem>
+                <HeaderItem>
+                  <Icon
+                    type="poweroff"
+                    onClick={this.logOut}
+                    style={{
+                      color: 'white',
+                      fontSize: '20px',
+                      marginLeft: 'auto'
+                    }}
+                  />
+                </HeaderItem>
+                <HeaderItem>
+                  <FontAwesomeIcon
+                    icon={Icons.faCommentsAlt}
+                    style={{
+                      color: 'white',
+                      fontSize: '20px',
+                      marginLeft: 'auto'
+                    }}
+                  />
+                </HeaderItem>
+              </div>
+            </Header>
+            <Layout>
+              <Sider theme={'light'} width={250}>
+                <ConversationsList
+                  conversations={conversations}
+                  selectedConversationSid={selectedConversationSid}
+                  onConversationClick={item => {
+                    this.setState({ selectedConversationSid: item.sid });
+                  }}
+                />
+              </Sider>
+              <Content className="conversation-section">
+                <div id="SelectedConversation">{conversationContent}</div>
+              </Content>
+            </Layout>
+          </Layout>
+        </div>
+      );
+    }
+
+    return <LoginPage onSubmit={this.logIn} />;
+  }
+}
+
+export default ConversationsApp;

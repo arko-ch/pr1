@@ -1,0 +1,491 @@
+// Bootstrap variables
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+.split-pane-container {
+  padding: 20px;
+
+  button {
+    // flex: 1;
+    // background: #f6f6f6;
+    // border: 1px solid rgba(246, 78, 48, 0.2);
+    border: none;
+    // color: #307df6;
+  }
+}
+
+.split-pane-left {
+  border-left: 1px solid #e1e1e1;
+  background: #fff;
+  height: 80vw;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.split-pane-right {
+  padding: 20px;
+  border-radius: 0 10px 10px 0;
+  background: #fff;
+  height: 80vw;
+}
+.email-highlighted {
+  border-left: 3px solid #f6b130;
+}
+
+.email-nav-tabs {
+  border: none !important;
+  .nav-item {
+    margin-bottom: -6px;
+  }
+}
+
+.email-tab-home-icon-container {
+  color: #6c30f6;
+  fill: #6c30f6 !important;
+}
+
+.email-tab-home-icon {
+  color: #6c30f6;
+  fill: #6c30f6 !important;
+}
+
+.email-tab-header {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 16px;
+  color: #393939;
+  border: none !important;
+  display: inline-flex;
+  position: relative;
+
+  &.active {
+    color: #307df6 !important;
+    // border-bottom: 2px solid #307df6 !important;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  &.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    bottom: -43%;
+    background: #307df6;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.email-btn {
+  background: #307df6;
+  border-radius: 4px;
+  border-color: #307df6;
+  color: #fff;
+}
+
+.email-btn-container {
+  display: flex;
+  text-align: right;
+}
+
+.email-tab-content-container {
+}
+
+.email-item-container {
+  background: #fff6f4;
+  border: 1px solid #fddcd6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px 10px;
+  align-items: center;
+  font-size: 14px;
+  flex-flow: row wrap;
+  margin-bottom: 16px;
+  justify-content: space-between;
+
+  button {
+    // flex: 1;
+    // background: #f6f6f6;
+    // border: 1px solid rgba(246, 78, 48, 0.2);
+    border: none;
+    // color: #307df6;
+  }
+}
+
+.email-sender-name {
+  flex: 1;
+}
+
+.email-email-title {
+  flex: 1;
+}
+
+.email-email-avatars {
+  flex: 1;
+}
+
+.email-email-buttons {
+  flex: 1;
+}
+
+.email-email-time {
+  flex: 1;
+  text-align: right;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.email-arrow-up-container {
+  flex-basis: 100%;
+  text-align: right;
+}
+
+.email-email-arrow {
+  color: #656565;
+  cursor: pointer;
+}
+
+.email-collapse-container {
+  display: flex;
+  border-top: 1px solid #000;
+}
+
+.email-avatar-border-radius {
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.email-avatar-container {
+  > span {
+    color: #f6b130;
+    position: absolute;
+    right: 15px;
+    bottom: -7px;
+  }
+}
+
+.email-avatar-radius {
+  border-radius: 8px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.email-btns {
+  cursor: pointer;
+}
+
+.email-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.email-content-divider {
+  height: 2px;
+  width: 100%;
+  background: #e7e7e7;
+  border-radius: 0px;
+  margin-bottom: 12px;
+}
+
+.email-btns {
+  background: transparent;
+  border: none;
+  color: #307df6;
+  :hover {
+    background: transparent !important;
+  }
+}
+
+.icon-flipped {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
+
+.email-content-container {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f7f8fa;
+  border-left: 4px solid #307df6;
+}
+
+.settlement-strength-bar-container {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.reply-container {
+  display: flex;
+  background: rgba(48, 125, 246, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+  justify-content: space-between;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  h5 {
+    color: #307df6;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    flex: none;
+  }
+
+  div {
+    color: #f6b130;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+  }
+
+  span {
+    background: #ffffff;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-left: 2px;
+    padding: 2px;
+  }
+
+  button {
+    background: rgba(48, 125, 246, 0.1);
+    border-radius: 4px;
+    border: none;
+    margin-left: 2px;
+    color: #307df6;
+  }
+}
+
+.email-input {
+  border-bottom: 1px solid #e7e7e7;
+  font-weight: 500;
+  font-size: 16px;
+  height: 40px;
+  font-family: 'Open sans';
+  font-size: 16px;
+  font-weight: 500;
+  &::placeholder {
+    font-family: 'Open sans';
+    font-size: 16px;
+    font-weight: 500;
+    color: #aeaeae;
+  }
+}
+
+.email-input-inner-container {
+  position: relative;
+  width: 100%;
+}
+
+.email-textarea-inner-container {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.email-bell-ring-icon {
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+
+.template-nav-tabs {
+  border-bottom: none;
+
+  .nav-link {
+    border: none;
+    font-family: 'Open sans';
+    font-size: 14px;
+    font-weight: 600;
+    color: #393939;
+    padding: 5px 5px 2px 5px;
+    margin: 0 15px;
+
+    &.active {
+      color: #307df6 !important;
+      border-bottom: 2px solid #307df6 !important;
+    }
+  }
+}
+
+.calendar-container {
+  max-width: 1000px;
+
+  .modal-content {
+    border-radius: 8px;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+}
+
+.calendar-greeting-container {
+  border-radius: 8px;
+}
+
+.calendar-inner-container {
+  background: #eaedf0;
+  text-align: center;
+  padding-top: 100px !important;
+
+  .react-calendar {
+    margin: 30px auto 0 auto;
+    background: transparent;
+    border: none;
+    font-size: 14px;
+
+    .react-calendar__month-view__weekdays {
+      font-weight: 800;
+      color: #000;
+    }
+
+    .react-calendar__month-view__days__day {
+      border: 1px solid #dfdfdf;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      color: #000;
+    }
+
+    .react-calendar__tile--now {
+      background: #3547e9;
+      color: #fff;
+    }
+
+    .react-calendar__navigation__label {
+      order: 1;
+      text-align: left;
+      color: #000;
+    }
+
+    .react-calendar__navigation__prev-button {
+      order: 2;
+      font-size: 30px;
+      color: #000;
+    }
+
+    .react-calendar__navigation__next-button {
+      order: 3;
+      font-size: 30px;
+      color: #000;
+    }
+
+    .react-calendar__navigation__prev2-button {
+      display: none;
+    }
+    .react-calendar__navigation__next2-button {
+      display: none;
+    }
+
+    .react-calendar__month-view__days__day--neighboringMonth {
+      color: #747474;
+
+      background: #fff;
+    }
+  }
+}
+
+.split-pane-header-icons {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-assigned-icon {
+  color: #f67f30;
+  font-size: 14px;
+}
+
+.split-pane-footer-icons {
+  color: #4b4f6a;
+  cursor: pointer;
+}
+
+.split-pane-upload-buttons {
+  color: #00bf73;
+}
+
+.email-viewed-img {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+.email-file-manager {
+  padding: 15px;
+  width: 100%;
+}
+
+.email-file-manager-tabs {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  color: #393939;
+  font-weight: 600 !important;
+  position: relative;
+
+  &.active-tab {
+    font-weight: bold !important;
+    color: #307df6 !important;
+  }
+
+  &.active-tab:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #307df6;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.email-file-manager-tab-badge {
+  display: inline-flex;
+}
+
+.email-list-group-item {
+  margin-top: 20px;
+  background: #ffffff !important;
+  border: 1px solid #e1e1e1 !important;
+  box-sizing: border-box !important;
+  border-radius: 8px !important;
+  font-family: 'Open Sans';
+  font-weight: 600 !important;
+  font-size: 12px;
+}
+
+.email-file-manager-add-files {
+  background: #eff1f5;
+  padding: 30px 20px;
+  border: 1px dashed #aeaeae !important;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #6d7082;
+  font-family: 'Open Sans';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700 !important;
+  width: 100%;
+}

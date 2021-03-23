@@ -1,0 +1,23 @@
+.ash-grid {
+  .ash-content {
+    z-index: 100;
+  }
+
+  .ash-panel {
+    z-index: 400;
+  }
+
+  .ash-toolbar {
+    z-index: 500;
+    &.ash-sticky {
+      z-index: 300;
+      > :first-child {
+        z-index: 300;
+      }
+    }
+  }
+
+  .ash-overlay {
+    z-index: 300;
+  }
+}

@@ -1,0 +1,16 @@
+.ash-content {
+  > :first-child {
+    flex-grow: 1;
+    max-width: 100vw;
+    // overflow-x: hidden;
+  }
+
+  &.ash-enabled {
+    display: flex;
+  }
+
+  min-height: 99%;
+  width: 100%;
+
+  @include sideOffsets();
+}

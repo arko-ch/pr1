@@ -1,0 +1,370 @@
+.email_holder {
+  background-color: #ffffff;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: block;
+}
+.email_area_wrapper {
+  display: flex;
+}
+
+.email_container {
+  display: inline-block;
+  margin: 0;
+  min-height: 50vh;
+}
+
+.email_area_line_sepretor {
+  background-color: #aeaeae;
+  width: 1px;
+}
+
+.email_area_left {
+  width: calc(40% - 1px);
+}
+.email_area_right {
+  width: 60%;
+}
+
+.email_button_holder {
+  margin-top: 15px;
+  margin-right: 15px;
+  position: relative;
+  display: flex;
+  float: right;
+}
+
+.email_vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.tab_container {
+  height: 71px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.tab_container_right_top {
+  height: 71px;
+}
+
+.tab_container_right {
+  height: 51px;
+}
+
+.tab_container_right .row {
+  height: 100%;
+}
+
+.tab_container .row {
+  height: 100%;
+}
+
+.email_button_holder > img {
+  margin-right: 10px;
+}
+
+.new_email_btn {
+  color: #ffff;
+  background: #307df6;
+  border-radius: 6px;
+  border-width: 0;
+  font-size: small;
+}
+
+.new_email_btn img {
+  margin-left: 5px;
+  margin-right: 5px;
+  -ms-transform: translateY(-15%);
+  transform: translateY(-15%);
+}
+.new_email_btn span {
+  margin-right: 5px;
+}
+
+.ticket_address {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.ticket_name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container_right {
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.right_line {
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: 43px;
+  width: 93%;
+  margin-left: 21px;
+  /* margin-right: 21px;*/
+}
+
+.right_address_count {
+  background-color: #f1f3f9;
+  border-radius: 4px;
+  /* margin-left: 1px; */
+  padding: 0px 2px 2px 2px;
+}
+
+.avatar img {
+  border-radius: 50%;
+  position: relative;
+  left: -5px;
+  margin-left: -15px;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+}
+
+.avatars {
+  direction: ltr;
+  text-align: left;
+  padding-left: 25px;
+  float: right;
+}
+
+.text_circle {
+  line-height: 30px;
+  font-size: 14px;
+  color: #307df6;
+  text-align: center;
+  background: #d2e5ff;
+  border-color: #fff;
+  border-width: 1px;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
+.avatar div {
+  border-radius: 50%;
+  position: relative;
+  left: 32px;
+  /* margin-left: -18px; */
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  top: -31px;
+}
+
+.expanded {
+  border-left: 4px solid #307df6;
+}
+
+//   .assign_email_card{
+//       width: 100%;
+//       height: 100%;
+//       border-bottom: 1px solid #e1e1e1;
+//       background-color: #f7f8fa;
+//   }
+
+// .assign_email_card:hover{
+//     background-color:#eff1f5;
+//  }
+
+.profile_card img {
+  border-radius: 50%;
+  position: relative;
+  /*left: 27px;*/
+  /* margin-left: -15px; */
+  /*z-index: 1;*/
+  width: 50px;
+  height: 50px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.profile_cards {
+  padding-left: 12px;
+  float: left;
+  width: 72px;
+  height: 100%;
+}
+.card_profile_badge {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+}
+
+.card_content_right {
+  margin-top: 25px;
+}
+
+.card_content_right .name {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #393939;
+}
+
+.card_content_right .name > span {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  color: #6d7082;
+  margin-left: 4px;
+}
+
+.card_content_right span.tag {
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 5px 3px 5px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.card_content_right span.imp {
+  background-color: #ffedca;
+  color: #ffa600;
+}
+
+.card_content_right span.enc {
+  background-color: #ccf2e3;
+  color: #00bf73;
+}
+
+.card_content_right span.cc {
+  background-color: #e1e1e1;
+  color: #6d7082;
+}
+
+.card_content_right span.email {
+  font-weight: normal !important;
+  text-transform: lowercase !important;
+}
+
+.card_content_right .subject_container {
+  margin-right: 20%;
+  margin-bottom: 10px;
+}
+
+.card_content_right .subject_container_secondory {
+  margin-bottom: 10px;
+}
+
+.card_content_right span.subject {
+  font-weight: 400;
+  font-size: 13px;
+  color: #393939;
+  font-style: normal;
+}
+
+.card_content_right span.subject_secondory {
+  font-weight: 400;
+}
+
+.card_content_right .subject_container_simple {
+  margin-bottom: 10px;
+}
+
+.card_content_right span.subject_simple {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  width: 75%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.simple_card_avatars {
+  margin-top: 24px;
+  margin-right: 29px;
+}
+
+.card_content_right span.subject_primary {
+  font-weight: 500;
+  line-height: 10px;
+}
+
+.card_content_right div.attachment_holder {
+  margin-bottom: 15px;
+}
+
+.card_content_right span.attached_files {
+  font-weight: 500;
+  font-size: 13px;
+  color: #307df6;
+  font-style: normal;
+}
+
+.card_content_right div.comments_holder {
+  width: 100%;
+}
+
+.card_content_right span.comments {
+  font-weight: 500;
+  font-size: 13px;
+  color: #307df6;
+  font-style: normal;
+}
+
+.card_content_right .comments_save {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.card_content_right .save_div {
+  margin-right: 17px;
+  width: 100%;
+}
+.card_content_right .save_div > span {
+  float: right;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #307df6;
+}
+
+.card_content_right .multiple_attachment {
+  display: flex;
+}
+
+.card_content_right .multiple_attachment div {
+  background-color: #fff;
+  margin-right: 11px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  height: 52px;
+}
+
+.card_content_right .multiple_attachment div:last-child {
+  margin-right: 15px;
+}
+
+.card_content_right .multiple_attachment img {
+  margin: 10px;
+}
+
+.card_content_right .multiple_attachment span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #393939;
+  width: 65%;
+  margin-right: 10px;
+  vertical-align: middle;
+}

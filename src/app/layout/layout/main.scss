@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  max-width: 100vw;
+}
+
+.ash-grid {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100vw;
+
+  .ash-panel,
+  .ash-content {
+    display: none;
+  }
+
+  &.ash-boxed {
+    @include var(padding-left, box-margin);
+    @include var(padding-right, box-margin);
+  }
+
+  &.ash-gap {
+    .ash-panel > :first-child,
+    .ash-content > :first-child {
+      margin: 2px;
+    }
+  }
+}
+
+.ash-offset-top {
+  @include var(padding-top, pnl-height);
+}
+
+.ash-offset-top-double {
+  @include var(padding-top, pnl-xheight);
+}
+
+.ash-grid.ash-debug-border {
+  border: 2px solid red;
+  .ash-panel > :first-child,
+  .ash-content > :first-child,
+  .ash-panel > :first-child > :first-child,
+  .ash-content > :first-child > :first-child {
+    border: 2px solid magenta;
+  }
+}
+
+@mixin sideOffsets() {
+  &.ash-offset-left {
+    @include var(padding-left, pnl-width);
+  }
+
+  &.ash-offset-right {
+    @include var(padding-right, pnl-width);
+  }
+
+  &.ash-offset-left-compact {
+    @include var(padding-left, pnl-cwidth);
+  }
+
+  &.ash-offset-right-compact {
+    @include var(padding-right, pnl-cwidth);
+  }
+
+  &.ash-offset-left-wide-wide {
+    @include var(padding-left, pnl-xxwidth);
+  }
+  &.ash-offset-left-compact-wide {
+    @include var(padding-left, pnl-cxwidth);
+  }
+  &.ash-offset-left-compact-compact {
+    @include var(padding-left, pnl-ccwidth);
+  }
+
+  &.ash-offset-right-wide-wide {
+    @include var(padding-right, pnl-xxwidth);
+  }
+  &.ash-offset-right-compact-wide {
+    @include var(padding-right, pnl-cxwidth);
+  }
+  &.ash-offset-right-compact-compact {
+    @include var(padding-right, pnl-ccwidth);
+  }
+}
+
+/* ===============================
+ * mobile
+ * ===============================
+ */
+
+@media screen and (max-width: $break-small) {
+  .ash-grid {
+    .ash-content {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+}
+
+@import './panel.scss';
+@import './navbar.scss';
+@import './toolbar.scss';
+@import './content.scss';
+@import './overlay.scss';
+@import './transitions.scss';
+@import './zindex.scss';

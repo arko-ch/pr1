@@ -1,0 +1,97 @@
+.ash-panel {
+  > :first-child {
+    flex-grow: 1;
+  }
+
+  &.ash-enabled {
+    display: flex;
+  }
+
+  height: 100%;
+  width: 0px;
+
+  &.ash-off-canvas {
+    &.ash-left {
+      @include translateX-minus(pnl-width);
+      &.ash-compact {
+        @include translateX-minus(pnl-cwidth);
+      }
+    }
+    &.ash-right {
+      @include translateX(pnl-width);
+      &.ash-compact {
+        @include translateX(pnl-cwidth);
+      }
+    }
+    &.ash-expand {
+      transform: none !important;
+      display: block !important;
+    }
+  }
+
+  &.ash-off-canvas,
+  &.ash-shown {
+    @include var(width, pnl-width);
+    &.ash-compact {
+      @include var(width, pnl-cwidth);
+    }
+  }
+
+  &.ash-left {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    &.ash-offset-left {
+      @include var(left, pnl-width);
+    }
+    &.ash-offset-left-compact {
+      @include var(left, pnl-cwidth);
+    }
+  }
+
+  &.ash-right {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: auto;
+    &.ash-offset-right {
+      @include var(right, pnl-width);
+    }
+    &.ash-offset-right-compact {
+      @include var(right, pnl-cwidth);
+    }
+  }
+
+  &.ash-top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    @include var(height, pnl-height);
+    width: 100%;
+  }
+}
+
+.ash-shown.ash-off-canvas {
+  display: none;
+}
+
+/* ===============================
+ * mobile
+ * ===============================
+ */
+
+@media screen and (max-width: $break-small) {
+  .ash-grid {
+    .ash-panel {
+      &:not(.ash-top) {
+        &:not(.ash-expand) {
+          width: 0px;
+        }
+      }
+    }
+  }
+}

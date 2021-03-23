@@ -1,0 +1,165 @@
+// Test out some scss here. But transfter to assets/base.scss when you're ready // BOOTSTRAP 4 IMPORTS
+
+input.form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus,
+button.form-control:focus {
+  outline-width: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.nav-link:focus {
+  display: none !important;
+}
+
+.app-header-title {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+.bg-plum-plate {
+  &.hh-100 {
+    height: 100vh !important;
+  }
+}
+
+.chat-highlight-grey {
+  background: #f1f1f1 !important // #f8ffd0 !important;
+}
+
+.chat-highlight {
+  background:  lightblue !important // #f8ffd0 !important;
+}
+
+.ash-navbar > :first-child > :first-child {
+  transition: width 0.3s ease;
+  position: fixed;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* contact section css */
+
+$contact-border-bottom: 1px solid #dadce0;
+
+.contactUserNoImage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  color: #fff;
+
+  h5 {
+    position: relative;
+    top: 4px;
+  }
+}
+
+.contact-modal-btn {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.contact-profile {
+  border-bottom: $contact-border-bottom;
+}
+
+.contact-edit-btns {
+  display: inline-flex;
+}
+
+.contact-profile {
+  padding: 15px;
+}
+
+.contact-edit-btn {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.contact-edit-btn:hover {
+  opacity: 1;
+}
+
+.contact-fields {
+  display: inline-block;
+}
+
+/* end of contact section css // BOOTSTRAP 4 IMPORTS*/
+
+.sticky-offset {
+  top: 56px;
+  z-index: 200;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+.c-nav nav.vert .collapse {
+  display: none;
+}
+
+.property-menu {
+  a {
+    color: #000;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.property-tabs {
+  font-size: 0.9rem;
+  background-color: #fff;
+  border: none;
+  color: #495057;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.property-tabs:focus {
+  box-shadow: none;
+  border: 0;
+}
+
+.property-tabs:hover {
+  text-decoration: none;
+  background-color: #fff !important;
+  border: none !important;
+  color: #3f6ad8 !important;
+}
+
+.property-tabs {
+  &.active {
+    box-shadow: 0 16px 26px -10px rgba(63, 106, 216, 0.56),
+      0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(63, 106, 216, 0.2) !important;
+    background-color: #3f6ad8 !important;
+    color: #fff !important;
+    border-radius: 5px;
+  }
+}
+
+.bordered-cell {
+  border-right: 2px solid red !important;
+}
+
+thead.form-list tr th,
+thead.form-list tr td,
+.form-group .form-group-label {
+  text-transform: capitalize;
+}
+
+.overview-fixed {
+  position: fixed;
+  width: 93.5%;
+  top: 44px;
+  z-index: 10;
+}

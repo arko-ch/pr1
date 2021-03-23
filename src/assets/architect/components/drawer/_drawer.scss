@@ -1,0 +1,59 @@
+// Drawers
+
+.drawer-content-wrapper {
+  background: $white;
+  position: relative;
+  padding: $layout-spacer-x;
+
+  .drawer-heading {
+    font-size: $font-size-sm;
+    color: $body-color;
+    margin: 0;
+    background: $gray-100;
+    padding: ($layout-spacer-x / 2) $layout-spacer-x;
+    border-bottom: $gray-300 solid 1px;
+    border-top: $gray-300 solid 1px;
+
+    &:first-child {
+      border-top: 0;
+    }
+  }
+
+  .drawer-section {
+    padding: $layout-spacer-x;
+
+    .react-datepicker {
+      display: block;
+      border: 0;
+
+      .react-datepicker__month-container {
+        float: none;
+      }
+
+      .react-datepicker__day-name,
+      .react-datepicker__day,
+      .react-datepicker__time-name {
+        width: 4rem;
+      }
+    }
+  }
+
+  & > .app-sidebar__heading:first-child {
+    margin-top: 0;
+  }
+}
+
+.drawer-nav-btn {
+  @include border-radius(30px);
+  background: $white;
+  position: fixed;
+  left: (-($layout-spacer-x * 1.5));
+  top: $layout-spacer-x / 2;
+  padding: ($layout-spacer-x / 3);
+  box-shadow: $box-shadow-sm;
+  z-index: 20;
+
+  .hamburger {
+    margin-top: 4px;
+  }
+}
