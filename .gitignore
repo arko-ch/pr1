@@ -1,15 +1,16 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+.idea
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+/bower_components
 
 # testing
 /coverage
 
 # production
 /build
+/documentation
 
 # misc
 .DS_Store
@@ -21,3 +22,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/config/config.js
+/src/assets/App.css
+/src/assets/App.css.map
+/src/assets/_App.css
+/src/assets/_App.css.map
+/src/app/entitled/app/config/config.js
+
+/public_storybook
+
+*.lock
+*-lock.json
+
+*.lock
+*-lock.json
+
+# precss-0803

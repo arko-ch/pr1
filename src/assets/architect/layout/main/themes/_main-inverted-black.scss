@@ -1,0 +1,247 @@
+// Theme Inverted Blue
+
+// Variables
+
+$app-container-bg: #212121;
+$app-sidebar-bg: #333333;
+$app-header-bg: #343435;
+$app-header-logo-bg: rgba(255, 255, 255, .03);
+
+// Content
+
+.app-theme-inverted-black {
+
+  &.app-container {
+    background: $app-container-bg;
+  }
+
+  .app-sidebar {
+    background: $app-sidebar-bg;
+    border-right: transparent solid 1px;
+  }
+
+  .app-page-title {
+    background: rgba(255, 255, 255, .03);
+  }
+
+  .app-footer,
+  .app-header {
+    background: $app-header-bg;
+  }
+
+  .app-footer {
+    border-top: transparent solid 1px;
+  }
+
+  &.fixed-header {
+    .app-header__logo {
+      background: $app-header-logo-bg;
+    }
+  }
+
+  .app-inner-layout__sidebar {
+    border-left: 0 !important;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, .05);
+  }
+
+  .card-footer,
+  .card-header {
+    background: rgba(255, 255, 255, .04);
+    color: rgba(255, 255, 255, .8);
+  }
+
+  .list-group-item {
+    background-color: transparent;
+  }
+
+  .text-focus {
+    color: rgba(255, 255, 255, .5) !important;
+  }
+
+  .btn-shadow {
+    box-shadow: 0 0 0 0 transparent !important;
+  }
+
+  .border-light {
+    border-color: rgba(0, 0, 0, .5) !important;
+  }
+
+  .text-dark {
+    color: rgba(255, 255, 255, .5) !important;
+  }
+
+  .menu-header-content.text-dark {
+    color: rgba(0, 0, 0, .8) !important;
+  }
+
+  .menu-header-content.text-white {
+    color: rgba(255, 255, 255, .8) !important;
+  }
+
+  .dropdown-menu-header,
+  .card-header,
+  .card-title {
+    color: rgba(255, 255, 255, .7);
+  }
+}
+
+.body-tabs-shadow-btn .body-tabs.body-tabs-layout .RRT__tab--selected {
+  color: rgba(255, 255, 255, .9) !important;
+}
+
+.dropdown-menu,
+.popover {
+  .nav-link .nav-link-icon {
+    color: rgba(255, 255, 255, .5);
+  }
+}
+
+.popover .RRT__panel::after,
+.popover .RRT__panel::before,
+.dropdown-menu .RRT__panel::after,
+.dropdown-menu .RRT__panel::before {
+  display: none;
+}
+
+.sa-icon.sa-success .sa-fix,
+.sa-icon.sa-success::before,
+.sa-icon.sa-success::after {
+  background: transparent;
+}
+
+.bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
+  border-bottom-color: $white;
+}
+
+.bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
+  border-top-color: $white;
+}
+
+.ps__rail-y {
+  &:hover {
+    & > .ps__thumb-y {
+      background: rgba(255, 255, 255, .1);
+    }
+  }
+  & > .ps__thumb-y {
+    background: rgba(255, 255, 255, .1);
+  }
+}
+
+.Toastify__toast {
+  &--default {
+    color: $white !important;
+  }
+}
+
+.dropdown-menu-header-inner {
+  &.bg-dark {
+    .menu-header-content {
+      color: $white;
+    }
+  }
+
+  &.bg-link {
+    .text-dark {
+      color: rgba(255, 255, 255, .7);
+    }
+  }
+}
+
+.badge.badge-light {
+  color: rgba(255, 255, 255, .7);
+}
+
+body {
+  .tabs-lg-alternate {
+    &.card-header {
+
+      & > .nav {
+        margin: 0;
+
+        .nav-link {
+          padding: $layout-spacer-x 0;
+          border-right: rgba(255, 255, 255, 0.05) solid 1px;
+          background: rgba(255, 255, 255, 0.02);
+
+          &:hover {
+            background: rgba(255, 255, 255, .06);
+          }
+
+          &::before {
+            display: none;
+          }
+
+          &.active {
+            background: rgba(255, 255, 255, .06);
+          }
+        }
+
+      }
+    }
+  }
+}
+
+body {
+  .nav-pills .nav-link.active,
+  .nav-pills .nav-link.active:hover {
+    color: rgba(255, 255, 255, .7) !important;
+  }
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  border-color: transparent !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: rgba(255, 255, 255, .1);
+}
+
+.rw-multiselect-tag > *,
+.daterangepicker,
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list,
+.block-ui-overlay,
+.modal-content {
+  background: $white;
+}
+
+.modal-header {
+  border-bottom-color: rgba(255, 255, 255, .1);
+}
+
+.modal-footer {
+  border-top-color: rgba(255, 255, 255, .1);
+}
+
+.pagination li a {
+  background: rgba(255, 255, 255, .03);
+  border-color: rgba(255, 255, 255, .05);
+}
+
+.rst__rowContents {
+  background: rgba(255, 255, 255, .03);
+}
+
+.rw-select-list-label,
+.react-sweet-progress-symbol,
+.reactour-portal,
+.bg-premium-dark .text-white {
+  color: $black;
+}
+
+.card-header-tab.z-index-6 .d-inline-block.ml-2 {
+  display: none !important;
+}
+
+.popover-inner {
+  .card.widget-chart.widget-chart2 {
+    background: none;
+  }
+}

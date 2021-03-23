@@ -1,0 +1,192 @@
+// animate-scss
+
+@import '../../node_modules/animate-sass/_animate.scss';
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+@import 'architect/themes/layout-variables';
+// tagging for cleanup and fixes
+//commented start here 042420
+// BOOTSTRAP 4 VARIABLES
+
+/* @import 'architect/components/bootstrap4/functions';
+@import 'architect/components/bootstrap4/variables';
+@import 'architect/components/bootstrap4/mixins';
+
+// ArchitectUI Themes Variables
+
+@import 'architect/themes/layout-variables';
+
+// BOOTSTRAP 4 IMPORTS
+
+@import 'architect/components/bootstrap4/root';
+@import 'architect/components/bootstrap4/reboot';
+@import 'architect/components/bootstrap4/type';
+@import 'architect/components/bootstrap4/images';
+@import 'architect/components/bootstrap4/code';
+@import 'architect/components/bootstrap4/grid';
+@import 'architect/components/bootstrap4/tables';
+@import 'architect/components/bootstrap4/forms';
+@import 'architect/components/bootstrap4/buttons';
+@import 'architect/components/bootstrap4/transitions';
+@import 'architect/components/bootstrap4/dropdown';
+@import 'architect/components/bootstrap4/button-group';
+@import 'architect/components/bootstrap4/input-group';
+@import 'architect/components/bootstrap4/custom-forms';
+@import 'architect/components/bootstrap4/nav';
+@import 'architect/components/bootstrap4/navbar';
+@import 'architect/components/bootstrap4/card';
+@import 'architect/components/bootstrap4/breadcrumb';
+@import 'architect/components/bootstrap4/pagination';
+@import 'architect/components/bootstrap4/badge';
+@import 'architect/components/bootstrap4/jumbotron';
+@import 'architect/components/bootstrap4/alert';
+@import 'architect/components/bootstrap4/progress';
+@import 'architect/components/bootstrap4/media';
+@import 'architect/components/bootstrap4/list-group';
+@import 'architect/components/bootstrap4/close';
+@import 'architect/components/bootstrap4/modal';
+@import 'architect/components/bootstrap4/tooltip';
+@import 'architect/components/bootstrap4/popover';
+@import 'architect/components/bootstrap4/carousel';
+@import 'architect/components/bootstrap4/utilities';
+@import 'architect/components/bootstrap4/print'; */
+// */ here 042420
+
+// ANIMATE
+@import 'architect/utils/animate';
+
+// LAYOUT
+@import 'architect/layout/layout';
+
+// ICONS
+@import 'architect/components/icons/linearicons';
+@import 'architect/components/icons/p7icons';
+
+// UTILS
+@import 'architect/utils/helpers';
+@import 'architect/utils/backgrounds';
+@import 'architect/utils/comps-animations';
+
+// ELEMENTS
+@import 'architect/elements/buttons';
+@import 'architect/elements/dropdown';
+@import 'architect/elements/navs';
+@import 'architect/elements/badges';
+@import 'architect/elements/cards';
+@import 'architect/elements/tabs';
+@import 'architect/elements/accordions';
+@import 'architect/elements/modals';
+@import 'architect/elements/loaders';
+@import 'architect/elements/progressbar';
+@import 'architect/elements/timeline';
+@import 'architect/elements/listgroup';
+@import 'architect/elements/forms';
+@import 'architect/elements/pagination';
+@import 'architect/elements/chat';
+@import 'architect/elements/forms-wizard';
+
+// DASHBOARD BOXES
+
+@import 'architect/widgets/chart-boxes/chart-boxes';
+@import 'architect/widgets/content-boxes/content-boxes';
+@import 'architect/widgets/profile-boxes/profile-boxes';
+
+// PAGES
+
+@import 'architect/pages/userpages';
+
+// Applications
+
+@import 'architect/applications/applications-base';
+
+// COMPONENTS
+
+// Perfect Scrollbar
+@import 'architect/components/perfect-scrollbar/perfect-scrollbar';
+
+// Loading Buttons
+@import 'architect/components/loading-buttons/loading-buttons';
+
+// Hamburger Button
+@import 'architect/components/hamburgers/hamburgers';
+
+// Drawer
+@import 'architect/components/drawer/drawer';
+
+// Notifications
+@import 'architect/components/notifications/sweetalerts';
+@import 'architect/components/notifications/toastify';
+
+// Modals
+@import 'architect/components/modals/rodal';
+
+// Progress Bar
+@import 'architect/components/progress-bar/progress-bar';
+
+// Slick Carousel
+@import 'architect/components/slick-carousel/slick/slick';
+
+// Block loading
+@import 'architect/components/block-loading/block-loading';
+
+// Popovers & Tooltips
+@import 'architect/components/popovers-tooltips/popovers-tooltips';
+
+// Sticky Elements
+@import 'architect/components/sticky-elements/sticky-elements';
+
+// Calendar
+@import 'architect/components/calendar/calendar';
+
+// Splitters
+@import 'architect/components/splitters/splitters';
+
+// Tree View
+@import 'architect/components/tree-view/tree-view';
+
+// Tables
+@import 'architect/components/tables/tables';
+
+// FORMS // BOOTSTRAP 4 IMPORTS
+
+@import 'architect/components/forms/datepicker/datepicker';
+@import 'architect/components/forms/rangeslider/rangeslider';
+@import 'architect/components/forms/multiselect/multiselect';
+@import 'architect/components/forms/wysiwyg/wysiwyg';
+@import 'architect/components/forms/toggle-switch/switch';
+@import 'architect/components/forms/dropzone/dropzone';
+@import 'architect/components/forms/typeahead/typeahead';
+
+// REACT WIDGETS // BOOTSTRAP 4 IMPORTS
+
+@import 'architect/components/react-widgets/scss/react-widgets';
+
+// DEMO
+
+// @import 'architect/demo-ui/demo'; // BOOTSTRAP 4 IMPORTS
+
+// Responsive
+
+@import 'architect/layout/responsive/responsive-base';
+
+@import 'settled';
+
+/*@import "stateface/reference/stateface.scss";*/
+
+@import 'buttons.scss';
+
+.modal-xxl {
+  max-width: calc(100vw - 20%);
+}
+.modal-xl {
+  max-width: calc(100vw - 40%);
+}
+
+// fix for calendar
+.card .table-responsive {
+  overflow-x: unset !important;
+}

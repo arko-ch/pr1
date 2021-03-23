@@ -1,0 +1,7 @@
+.ash-navbar.ash-top {
+  height: 0px;
+  overflow-y: hidden;
+  &.ash-shown {
+    @include var(height, pnl-xheight);
+  }
+}

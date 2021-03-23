@@ -1,0 +1,14 @@
+.App {
+    text-align: center;
+  }
+  
+  .pane {
+    display: inline-block;
+    overflow-y: scroll;
+    max-height: 1000px;
+  }
+  
+  table {
+    text-align: left;
+  }
+  

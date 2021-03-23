@@ -1,0 +1,20 @@
+.ash-overlay {
+  display: block;
+  width: 0px;
+  height: 0px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #505050;
+  opacity: 0;
+
+  &.ash-enabled {
+    width: 100vw !important;
+    height: 100vh !important;
+    opacity: 0.45;
+  }
+
+  &.ash-transparent {
+    opacity: 0;
+  }
+}

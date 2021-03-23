@@ -1,0 +1,88 @@
+// Chat Box
+
+$conversation-list: 74vh;
+
+.chat-box-container {
+    width: 100%;
+
+    .loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
+        opacity: 0.6;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 20px;
+        bottom: 0;
+        z-index: 10000;
+    }
+
+    .chat-box-msgs {
+        height: $conversation-list;
+        
+        .user-chat-container {
+            display: flex;
+            align-items: flex-end;
+            padding: .5rem;
+
+            &-false {
+                flex-direction: row;
+            }
+
+            &-true {
+                flex-direction: row-reverse;
+                justify-content: start;
+            }
+
+            .message-box-container {
+                display: flex;
+                flex-direction: column;
+
+                &-false {
+                    margin-left: .25em;
+                }
+
+                &-true {
+                    margin-right: .25em;
+                    align-items: flex-end;
+                }
+
+                .message-box {
+                    padding: .3rem .5rem;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    &-false {
+                        // margin-left: .25rem;
+                        background: #e8e5e5;
+                    }
+    
+                    &-true {
+                        // margin-right: .25rem;
+                        background: #3f6ad8;
+                        color: $white;
+                    }
+
+                    .chat-message {
+                        max-width: 200px;
+                        word-break: break-word;
+                    }
+                }
+            }
+        }
+    }
+
+    .chat-box-input-container {
+        width: 100%;
+        padding: .80rem .5rem 0 .5rem;
+        display: flex;
+        flex-direction: row;
+
+        button {
+            margin-left: .5rem;
+        }
+    }
+}

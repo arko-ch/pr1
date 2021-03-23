@@ -1,0 +1,50 @@
+$break-tiny: 576px;
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+
+$vars: (
+  pnl-height: 4.2em,
+  pnl-xheight: 8.4em,
+  pnl-width: 18em,
+  pnl-cwidth: 5em,
+  pnl-cxwidth: 23em,
+  pnl-ccwidth: 10em,
+  pnl-xxwidth: 36em,
+  box-margin: 10vw,
+  box-cmargin: 6vw,
+  ovl-color: #505050,
+  ovl-opacity: 0.45
+);
+
+:root {
+  --pnl-height: #{map-get($vars, pnl-height)};
+  --pnl-xheight: #{map-get($vars, pnl-xheight)};
+  --pnl-width: #{map-get($vars, pnl-width)};
+  --pnl-cwidth: #{map-get($vars, pnl-cwidth)};
+  --pnl-ccwidth: #{map-get($vars, pnl-ccwidth)};
+  --pnl-xxwidth: #{map-get($vars, pnl-xxwidth)};
+  --pnl-cxwidth: #{map-get($vars, pnl-cxwidth)};
+  --box-margin: #{map-get($vars, box-margin)};
+  --box-cmargin: #{map-get($vars, box-cmargin)};
+}
+
+@mixin var($property, $varName) {
+  #{$property}: map-get($vars, $varName);
+  #{$property}: var(--#{$varName});
+}
+
+@mixin var-minus($property, $varName) {
+  #{$property}: -#{map-get($vars, $varName)};
+  #{$property}: -#{var(--#{$varName})};
+}
+
+@mixin translateX($varName) {
+  transform: translateX(#{map-get($vars, $varName)});
+  transform: translateX(#{var(--#{$varName})});
+}
+
+@mixin translateX-minus($varName) {
+  transform: translateX(-#{map-get($vars, $varName)});
+  transform: translateX(-#{var(--#{$varName})});
+}

@@ -1,0 +1,4729 @@
+{
+    "contact": {
+        "uid": "contact",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "firstName": {
+                "edit": {
+                    "label": "FirstName",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "FirstName",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "lastName": {
+                "edit": {
+                    "label": "LastName",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "LastName",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "email": {
+                "edit": {
+                    "label": "Email",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Email",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "contact": {
+                "edit": {
+                    "label": "Contact",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Contact",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "address": {
+                "edit": {
+                    "label": "Address",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Address",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "state": {
+                "edit": {
+                    "label": "State",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "State",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "tags": {
+                "edit": {
+                    "label": "Tags",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Tags",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdDateTime": {
+                "edit": {
+                    "label": "CreatedDateTime",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedDateTime",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "lastModifiedDateTime": {
+                "edit": {
+                    "label": "LastModifiedDateTime",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "LastModifiedDateTime",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "birthday": {
+                "edit": {
+                    "label": "Birthday",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Birthday",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "title": {
+                "edit": {
+                    "label": "Title",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Title",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "jobTitle": {
+                "edit": {
+                    "label": "JobTitle",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "JobTitle",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "companyName": {
+                "edit": {
+                    "label": "CompanyName",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CompanyName",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "department": {
+                "edit": {
+                    "label": "Department",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Department",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "businessHomePage": {
+                "edit": {
+                    "label": "BusinessHomePage",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BusinessHomePage",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "assistantName": {
+                "edit": {
+                    "label": "AssistantName",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "AssistantName",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "manager": {
+                "edit": {
+                    "label": "Manager",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Manager",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "homePhones": {
+                "edit": {
+                    "label": "HomePhones",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "HomePhones",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "mobilePhone": {
+                "edit": {
+                    "label": "MobilePhone",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "MobilePhone",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "businessPhones": {
+                "edit": {
+                    "label": "BusinessPhones",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BusinessPhones",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "otherAddress": {
+                "edit": {
+                    "label": "OtherAddress",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "OtherAddress",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "personalNotes": {
+                "edit": {
+                    "label": "PersonalNotes",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PersonalNotes",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "businessAddress": {
+                "edit": {
+                    "label": "BusinessAddress",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BusinessAddress",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "client": {
+                "edit": {
+                    "label": "Client",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Client",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "buyer": {
+                "edit": {
+                    "label": "Buyer",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Buyer",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "seller": {
+                "edit": {
+                    "label": "Seller",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Seller",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "attorney": {
+                "edit": {
+                    "label": "Attorney",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Attorney",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "realtor": {
+                "edit": {
+                    "label": "Realtor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Realtor",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "underwriter": {
+                "edit": {
+                    "label": "Underwriter",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Underwriter",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "lender": {
+                "edit": {
+                    "label": "Lender",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Lender",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "contactExt": {
+                "edit": {
+                    "label": "ContactExt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ContactExt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "organization": {
+                "edit": {
+                    "label": "Organization",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Organization",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "firstName",
+                "lastName",
+                "email"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "firstName",
+                        "size": 6
+                    },
+                    {
+                        "name": "lastName",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "email",
+                        "size": 6
+                    },
+                    {
+                        "name": "contact",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "address",
+                        "size": 6
+                    },
+                    {
+                        "name": "state",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "tags",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "createdDateTime",
+                        "size": 4
+                    },
+                    {
+                        "name": "lastModifiedDateTime",
+                        "size": 4
+                    },
+                    {
+                        "name": "birthday",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "title",
+                        "size": 6
+                    },
+                    {
+                        "name": "jobTitle",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "companyName",
+                        "size": 6
+                    },
+                    {
+                        "name": "department",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "businessHomePage",
+                        "size": 6
+                    },
+                    {
+                        "name": "assistantName",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "manager",
+                        "size": 6
+                    },
+                    {
+                        "name": "homePhones",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "mobilePhone",
+                        "size": 6
+                    },
+                    {
+                        "name": "businessPhones",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "otherAddress",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "personalNotes",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "businessAddress",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "client",
+                        "size": 4
+                    },
+                    {
+                        "name": "buyer",
+                        "size": 4
+                    },
+                    {
+                        "name": "seller",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "attorney",
+                        "size": 4
+                    },
+                    {
+                        "name": "realtor",
+                        "size": 4
+                    },
+                    {
+                        "name": "underwriter",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "lender",
+                        "size": 4
+                    },
+                    {
+                        "name": "contactExt",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "organization",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "commitment": {
+        "uid": "commitment",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "state": {
+                "edit": {
+                    "label": "State",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "State",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "code": {
+                "edit": {
+                    "label": "Code",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Code",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "shortDescription": {
+                "edit": {
+                    "label": "ShortDescription",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ShortDescription",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "variations": {
+                "edit": {
+                    "label": "Variations",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Variations",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "type": {
+                "edit": {
+                    "label": "Type",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Type",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "name",
+                "description",
+                "state"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "state",
+                        "size": 6
+                    },
+                    {
+                        "name": "code",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "shortDescription",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "variations",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "type",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "conversation": {
+        "uid": "conversation",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "conversationId": {
+                "edit": {
+                    "label": "ConversationId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ConversationId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "parties": {
+                "edit": {
+                    "label": "Parties",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Parties",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "assets": {
+                "edit": {
+                    "label": "Assets",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Assets",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "context": {
+                "edit": {
+                    "label": "Context",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Context",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "conversationId",
+                "createdAt",
+                "updatedAt"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "conversationId",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "parties",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "assets",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "context",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "insurancepremium": {
+        "uid": "insurancepremium",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "category": {
+                "edit": {
+                    "label": "Category",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Category",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "amount": {
+                "edit": {
+                    "label": "Amount",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Amount",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "category",
+                "amount",
+                "name"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "category",
+                        "size": 6
+                    },
+                    {
+                        "name": "amount",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "stickynotes": {
+        "uid": "stickynotes",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "hidden": {
+                "edit": {
+                    "label": "Hidden",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Hidden",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "noteId": {
+                "edit": {
+                    "label": "NoteId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "NoteId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "noteDescription": {
+                "edit": {
+                    "label": "NoteDescription",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "NoteDescription",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pin": {
+                "edit": {
+                    "label": "Pin",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Pin",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pinColor": {
+                "edit": {
+                    "label": "PinColor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PinColor",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pinLabel": {
+                "edit": {
+                    "label": "PinLabel",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PinLabel",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "propertyId": {
+                "edit": {
+                    "label": "PropertyId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PropertyId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "hidden",
+                "noteId",
+                "noteDescription"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "hidden",
+                        "size": 6
+                    },
+                    {
+                        "name": "noteId",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "noteDescription",
+                        "size": 6
+                    },
+                    {
+                        "name": "pin",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "pinColor",
+                        "size": 6
+                    },
+                    {
+                        "name": "pinLabel",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "propertyId",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "note": {
+        "uid": "note",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "title": {
+                "edit": {
+                    "label": "Title",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Title",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "owner": {
+                "edit": {
+                    "label": "Owner",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Owner",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "completed": {
+                "edit": {
+                    "label": "Completed",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Completed",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "completedDate": {
+                "edit": {
+                    "label": "CompletedDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CompletedDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "context": {
+                "edit": {
+                    "label": "Context",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Context",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "meta": {
+                "edit": {
+                    "label": "Meta",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Meta",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "title",
+                "description",
+                "completed"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "title",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "owner",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "completed",
+                        "size": 4
+                    },
+                    {
+                        "name": "completedDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "context",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "meta",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "property": {
+        "uid": "property",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "referenceNo": {
+                "edit": {
+                    "label": "ReferenceNo",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ReferenceNo",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "properties": {
+                "edit": {
+                    "label": "Properties",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Properties",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "transactionType": {
+                "edit": {
+                    "label": "TransactionType",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "TransactionType",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "purchasePrice": {
+                "edit": {
+                    "label": "PurchasePrice",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PurchasePrice",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "salesOrganization": {
+                "edit": {
+                    "label": "SalesOrganization",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SalesOrganization",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "salesPerson": {
+                "edit": {
+                    "label": "SalesPerson",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SalesPerson",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "closing": {
+                "edit": {
+                    "label": "Closing",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Closing",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "closingDate": {
+                "edit": {
+                    "label": "ClosingDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ClosingDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "buyer": {
+                "edit": {
+                    "label": "Buyer",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Buyer",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "buyerRealtor": {
+                "edit": {
+                    "label": "BuyerRealtor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BuyerRealtor",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "buyerAttorney": {
+                "edit": {
+                    "label": "BuyerAttorney",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BuyerAttorney",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "seller": {
+                "edit": {
+                    "label": "Seller",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Seller",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "sellerRealtor": {
+                "edit": {
+                    "label": "SellerRealtor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SellerRealtor",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "sellerAttorney": {
+                "edit": {
+                    "label": "SellerAttorney",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SellerAttorney",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "movingInAtClosing": {
+                "edit": {
+                    "label": "MovingInAtClosing",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "MovingInAtClosing",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "sherriffSaleOrForeclosure": {
+                "edit": {
+                    "label": "SherriffSaleOrForeclosure",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SherriffSaleOrForeclosure",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "policyIssuingTo": {
+                "edit": {
+                    "label": "PolicyIssuingTo",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PolicyIssuingTo",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "ownersPolicyAmount": {
+                "edit": {
+                    "label": "OwnersPolicyAmount",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "OwnersPolicyAmount",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "lendersPolicyAmount": {
+                "edit": {
+                    "label": "LendersPolicyAmount",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "LendersPolicyAmount",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "mortgages": {
+                "edit": {
+                    "label": "Mortgages",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Mortgages",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "notes": {
+                "edit": {
+                    "label": "Notes",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Notes",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "covers": {
+                "edit": {
+                    "label": "Covers",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Covers",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "commitment": {
+                "edit": {
+                    "label": "Commitment",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Commitment",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "payments": {
+                "edit": {
+                    "label": "Payments",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Payments",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "hoa": {
+                "edit": {
+                    "label": "Hoa",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Hoa",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "utility": {
+                "edit": {
+                    "label": "Utility",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Utility",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "interestType": {
+                "edit": {
+                    "label": "InterestType",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "InterestType",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "underwriter": {
+                "edit": {
+                    "label": "Underwriter",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Underwriter",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "moreParties": {
+                "edit": {
+                    "label": "MoreParties",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "MoreParties",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "instruments": {
+                "edit": {
+                    "label": "Instruments",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Instruments",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "insurances": {
+                "edit": {
+                    "label": "Insurances",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Insurances",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "transactions": {
+                "edit": {
+                    "label": "Transactions",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Transactions",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "manager": {
+                "edit": {
+                    "label": "Manager",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Manager",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "processor": {
+                "edit": {
+                    "label": "Processor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Processor",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "examiner": {
+                "edit": {
+                    "label": "Examiner",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Examiner",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "closer": {
+                "edit": {
+                    "label": "Closer",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Closer",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "postCloser": {
+                "edit": {
+                    "label": "PostCloser",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PostCloser",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "backOffice": {
+                "edit": {
+                    "label": "BackOffice",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "BackOffice",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "referenceNo",
+                "transactionType",
+                "purchasePrice"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "referenceNo",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "properties",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "transactionType",
+                        "size": 6
+                    },
+                    {
+                        "name": "purchasePrice",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "salesOrganization",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "salesPerson",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "closing",
+                        "size": 6
+                    },
+                    {
+                        "name": "closingDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "buyer",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "buyerRealtor",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "buyerAttorney",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "seller",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "sellerRealtor",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "sellerAttorney",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "movingInAtClosing",
+                        "size": 4
+                    },
+                    {
+                        "name": "sherriffSaleOrForeclosure",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "policyIssuingTo",
+                        "size": 6
+                    },
+                    {
+                        "name": "ownersPolicyAmount",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "lendersPolicyAmount",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "mortgages",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "notes",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "covers",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "commitment",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "payments",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "hoa",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "utility",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "interestType",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "underwriter",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "moreParties",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "instruments",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "insurances",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "transactions",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "manager",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "processor",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "examiner",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "closer",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "postCloser",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "backOffice",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "feedefault": {
+        "uid": "feedefault",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "name",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "fee": {
+                "edit": {
+                    "label": "Fee",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Fee",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "setByThirdParty": {
+                "edit": {
+                    "label": "SetByThirdParty",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "SetByThirdParty",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "category": {
+                "edit": {
+                    "label": "Category",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Category",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "name",
+                "description",
+                "fee"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "fee",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "setByThirdParty",
+                        "size": 4
+                    },
+                    {
+                        "name": "category",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "notes": {
+        "uid": "notes",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "hidden": {
+                "edit": {
+                    "label": "Hidden",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Hidden",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "noteId": {
+                "edit": {
+                    "label": "NoteId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "NoteId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "noteDescription": {
+                "edit": {
+                    "label": "NoteDescription",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "NoteDescription",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pin": {
+                "edit": {
+                    "label": "Pin",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Pin",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pinColor": {
+                "edit": {
+                    "label": "PinColor",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PinColor",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "pinLabel": {
+                "edit": {
+                    "label": "PinLabel",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PinLabel",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "propertyId": {
+                "edit": {
+                    "label": "PropertyId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PropertyId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "hidden",
+                "noteId",
+                "noteDescription"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "hidden",
+                        "size": 6
+                    },
+                    {
+                        "name": "noteId",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "noteDescription",
+                        "size": 6
+                    },
+                    {
+                        "name": "pin",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "pinColor",
+                        "size": 6
+                    },
+                    {
+                        "name": "pinLabel",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "propertyId",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "transferfee": {
+        "uid": "transferfee",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "email": {
+                "edit": {
+                    "label": "Email",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Email",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "considerationamount": {
+                "edit": {
+                    "label": "Considerationamount",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Considerationamount",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "exemptiontype": {
+                "edit": {
+                    "label": "Exemptiontype",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Exemptiontype",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "email",
+                "considerationamount",
+                "exemptiontype"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "email",
+                        "size": 6
+                    },
+                    {
+                        "name": "considerationamount",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "exemptiontype",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "file": {
+        "uid": "file",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "title": {
+                "edit": {
+                    "label": "Title",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Title",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "completed": {
+                "edit": {
+                    "label": "Completed",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Completed",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "completedDate": {
+                "edit": {
+                    "label": "CompletedDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CompletedDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "owner": {
+                "edit": {
+                    "label": "Owner",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Owner",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "assigned": {
+                "edit": {
+                    "label": "Assigned",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Assigned",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "context": {
+                "edit": {
+                    "label": "Context",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Context",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "journal": {
+                "edit": {
+                    "label": "Journal",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Journal",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "source": {
+                "edit": {
+                    "label": "Source",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Source",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "targetDate": {
+                "edit": {
+                    "label": "TargetDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "TargetDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "meta": {
+                "edit": {
+                    "label": "Meta",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Meta",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "paths": {
+                "edit": {
+                    "label": "Paths",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Paths",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "title",
+                "description",
+                "completed"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "title",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "completed",
+                        "size": 4
+                    },
+                    {
+                        "name": "completedDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "owner",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "assigned",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "context",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "journal",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "source",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "targetDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "meta",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "paths",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "propertycalcs": {
+        "uid": "propertycalcs",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "rowId": {
+                "edit": {
+                    "label": "RowId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "RowId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "price": {
+                "edit": {
+                    "label": "Price",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Price",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "mortgAmount": {
+                "edit": {
+                    "label": "MortgAmount",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "MortgAmount",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "prevMortgage": {
+                "edit": {
+                    "label": "PrevMortgage",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PrevMortgage",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "propertyId": {
+                "edit": {
+                    "label": "PropertyId",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "PropertyId",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "instrument": {
+                "edit": {
+                    "label": "Instrument",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Instrument",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "premium": {
+                "edit": {
+                    "label": "Premium",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Premium",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "rowId",
+                "price",
+                "mortgAmount"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "rowId",
+                        "size": 6
+                    },
+                    {
+                        "name": "price",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "mortgAmount",
+                        "size": 6
+                    },
+                    {
+                        "name": "prevMortgage",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "propertyId",
+                        "size": 6
+                    },
+                    {
+                        "name": "instrument",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "premium",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "task": {
+        "uid": "task",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "title": {
+                "edit": {
+                    "label": "Title",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Title",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "completed": {
+                "edit": {
+                    "label": "Completed",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Completed",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "completedDate": {
+                "edit": {
+                    "label": "CompletedDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CompletedDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "owner": {
+                "edit": {
+                    "label": "Owner",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Owner",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "assigned": {
+                "edit": {
+                    "label": "Assigned",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Assigned",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "context": {
+                "edit": {
+                    "label": "Context",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Context",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "journal": {
+                "edit": {
+                    "label": "Journal",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Journal",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "requirement": {
+                "edit": {
+                    "label": "Requirement",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Requirement",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "targetDate": {
+                "edit": {
+                    "label": "TargetDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "TargetDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "meta": {
+                "edit": {
+                    "label": "Meta",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Meta",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "title",
+                "description",
+                "completed"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "title",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "completed",
+                        "size": 4
+                    },
+                    {
+                        "name": "completedDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "owner",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "assigned",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "context",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "journal",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "requirement",
+                        "size": 12
+                    }
+                ],
+                [
+                    {
+                        "name": "targetDate",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "meta",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "admin.administrator": {
+        "uid": "administrator",
+        "source": "admin",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "username": {
+                "edit": {
+                    "label": "Username",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Username",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "email": {
+                "edit": {
+                    "label": "Email",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Email",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "password": {
+                "edit": {
+                    "label": "Password",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Password",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "resetPasswordToken": {
+                "edit": {
+                    "label": "ResetPasswordToken",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ResetPasswordToken",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "blocked": {
+                "edit": {
+                    "label": "Blocked",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Blocked",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "username",
+                "email",
+                "resetPasswordToken"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "username",
+                        "size": 6
+                    },
+                    {
+                        "name": "email",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "password",
+                        "size": 6
+                    },
+                    {
+                        "name": "resetPasswordToken",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "blocked",
+                        "size": 4
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    },
+    "users-permissions.role": {
+        "uid": "role",
+        "source": "users-permissions",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "description": {
+                "edit": {
+                    "label": "Description",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Description",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "type": {
+                "edit": {
+                    "label": "Type",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Type",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "permissions": {
+                "edit": {
+                    "label": "Permissions",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true,
+                    "mainField": "id"
+                },
+                "list": {
+                    "label": "Permissions",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "users": {
+                "edit": {
+                    "label": "Users",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true,
+                    "mainField": "id"
+                },
+                "list": {
+                    "label": "Users",
+                    "searchable": false,
+                    "sortable": false
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "name",
+                "description",
+                "type"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    },
+                    {
+                        "name": "description",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "type",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": [
+                "permissions",
+                "users"
+            ]
+        }
+    },
+    "users-permissions.permission": {
+        "uid": "permission",
+        "source": "users-permissions",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "type": {
+                "edit": {
+                    "label": "Type",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Type",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "controller": {
+                "edit": {
+                    "label": "Controller",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Controller",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "action": {
+                "edit": {
+                    "label": "Action",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Action",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "enabled": {
+                "edit": {
+                    "label": "Enabled",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Enabled",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "policy": {
+                "edit": {
+                    "label": "Policy",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Policy",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "role": {
+                "edit": {
+                    "label": "Role",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true,
+                    "mainField": "id"
+                },
+                "list": {
+                    "label": "Role",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "type",
+                "controller",
+                "action"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "type",
+                        "size": 6
+                    },
+                    {
+                        "name": "controller",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "action",
+                        "size": 6
+                    },
+                    {
+                        "name": "enabled",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "policy",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": [
+                "role"
+            ]
+        }
+    },
+    "users-permissions.user": {
+        "uid": "user",
+        "source": "users-permissions",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "username": {
+                "edit": {
+                    "label": "Username",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Username",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "email": {
+                "edit": {
+                    "label": "Email",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Email",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "provider": {
+                "edit": {
+                    "label": "Provider",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Provider",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "password": {
+                "edit": {
+                    "label": "Password",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Password",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "resetPasswordToken": {
+                "edit": {
+                    "label": "ResetPasswordToken",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ResetPasswordToken",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "confirmed": {
+                "edit": {
+                    "label": "Confirmed",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Confirmed",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "blocked": {
+                "edit": {
+                    "label": "Blocked",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Blocked",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "role": {
+                "edit": {
+                    "label": "Role",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true,
+                    "mainField": "name"
+                },
+                "list": {
+                    "label": "Role",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "profilepic": {
+                "edit": {
+                    "label": "Profilepic",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Profilepic",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "username",
+                "email",
+                "provider"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "username",
+                        "size": 6
+                    },
+                    {
+                        "name": "email",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "provider",
+                        "size": 6
+                    },
+                    {
+                        "name": "password",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "resetPasswordToken",
+                        "size": 6
+                    },
+                    {
+                        "name": "confirmed",
+                        "size": 4
+                    }
+                ],
+                [
+                    {
+                        "name": "blocked",
+                        "size": 4
+                    },
+                    {
+                        "name": "name",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "profilepic",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": [
+                "role"
+            ]
+        }
+    },
+    "upload.file": {
+        "uid": "file",
+        "source": "upload",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "hash": {
+                "edit": {
+                    "label": "Hash",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Hash",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "sha256": {
+                "edit": {
+                    "label": "Sha256",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Sha256",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "ext": {
+                "edit": {
+                    "label": "Ext",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Ext",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "mime": {
+                "edit": {
+                    "label": "Mime",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Mime",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "size": {
+                "edit": {
+                    "label": "Size",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Size",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "url": {
+                "edit": {
+                    "label": "Url",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Url",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "provider": {
+                "edit": {
+                    "label": "Provider",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Provider",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "provider_metadata": {
+                "edit": {
+                    "label": "Provider_metadata",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Provider_metadata",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "related": {
+                "edit": {
+                    "label": "Related",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true,
+                    "mainField": "id"
+                },
+                "list": {
+                    "label": "Related",
+                    "searchable": false,
+                    "sortable": false
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "name",
+                "hash",
+                "sha256"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    },
+                    {
+                        "name": "hash",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "sha256",
+                        "size": 6
+                    },
+                    {
+                        "name": "ext",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "mime",
+                        "size": 6
+                    },
+                    {
+                        "name": "size",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "url",
+                        "size": 6
+                    },
+                    {
+                        "name": "provider",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "provider_metadata",
+                        "size": 12
+                    }
+                ]
+            ],
+            "editRelations": [
+                "related"
+            ]
+        }
+    },
+    "escrow": {
+        "uid": "escrow",
+        "settings": {
+            "searchable": true,
+            "filterable": true,
+            "bulkable": true,
+            "pageSize": 10,
+            "mainField": "id",
+            "defaultSortBy": "id",
+            "defaultSortOrder": "ASC"
+        },
+        "metadatas": {
+            "id": {
+                "edit": {},
+                "list": {
+                    "label": "Id",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "name": {
+                "edit": {
+                    "label": "Name",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Name",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "type": {
+                "edit": {
+                    "label": "Type",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Type",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "location": {
+                "edit": {
+                    "label": "Location",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Location",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "notes": {
+                "edit": {
+                    "label": "Notes",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "Notes",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "reminderDate": {
+                "edit": {
+                    "label": "ReminderDate",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ReminderDate",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "reminderNote": {
+                "edit": {
+                    "label": "ReminderNote",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ReminderNote",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "reminderType": {
+                "edit": {
+                    "label": "ReminderType",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": true,
+                    "editable": true
+                },
+                "list": {
+                    "label": "ReminderType",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "createdAt": {
+                "edit": {
+                    "label": "CreatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "CreatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            },
+            "updatedAt": {
+                "edit": {
+                    "label": "UpdatedAt",
+                    "description": "",
+                    "placeholder": "",
+                    "visible": false,
+                    "editable": true
+                },
+                "list": {
+                    "label": "UpdatedAt",
+                    "searchable": true,
+                    "sortable": true
+                }
+            }
+        },
+        "layouts": {
+            "list": [
+                "id",
+                "name",
+                "type",
+                "location"
+            ],
+            "edit": [
+                [
+                    {
+                        "name": "name",
+                        "size": 6
+                    },
+                    {
+                        "name": "type",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "location",
+                        "size": 6
+                    },
+                    {
+                        "name": "notes",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "reminderDate",
+                        "size": 4
+                    },
+                    {
+                        "name": "reminderNote",
+                        "size": 6
+                    }
+                ],
+                [
+                    {
+                        "name": "reminderType",
+                        "size": 6
+                    }
+                ]
+            ],
+            "editRelations": []
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.ash-panel.ash-toolbar {
+  &.ash-sticky > :first-child {
+    position: fixed;
+  }
+
+  height: 0px;
+  overflow: hidden;
+
+  &.ash-shown {
+    height: auto;
+    @include var(min-height, pnl-height);
+  }
+
+  &.ash-inside {
+    width: 100%;
+
+    @include sideOffsets();
+  }
+}

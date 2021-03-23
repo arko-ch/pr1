@@ -1,0 +1,23 @@
+{
+    "commitment": {
+        "model": "commitment",
+        "modelId": "commitmentId",
+        "models": "commitments",
+        "modelComponent": "Commitment",
+        "title": "Commitments"
+    },
+    "feedefault": {
+        "model": "feedefault",
+        "modelId": "feedefaultId",
+        "models": "feedefaults",
+        "modelComponent": "Feedefault",
+        "title": "Fee Defaults"
+    },
+    "escrow": {
+        "model": "escrow",
+        "modelId": "escrowId",
+        "models": "escrows",
+        "modelComponent": "Escrow",
+        "title": "Escrow"
+    }
+}
