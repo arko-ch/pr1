@@ -1,0 +1,373 @@
+/*Class Name: errormsg
+  Usability: To display the error message;
+
+  Class Name: error;
+  Usability: To bring the red outline on inpupt fields when entered wrong input;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+	--brand-color-blue: #307DF6;
+	--brand-color-yellow: #FFA600;
+	--brand-color-purple: #7B47F7;
+	--brand-color-border: rgb(219, 220, 225);
+	--brand-color-hover: #F1F3F9;
+	--brand-color-anchor: #6D7082;
+}
+html {
+	font-size: 16px;
+}
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+p {
+	margin: .5rem 0;
+}
+.small-font {
+	font-size: .875rem;
+}
+.font-semi-bold {
+	font-weight: 600;
+}
+.font-bold {
+	font-weight: 700;
+}
+.row-equal {
+	display: flex;
+	flex-wrap: wrap;
+}
+.align-center {
+	display: flex;
+	align-items: center;
+}
+.justify-end {
+	justify-content: flex-end;
+}
+.h-100 {
+	height: 100% !important;
+}
+.bor-bot {
+	border-bottom: 1px solid rgb(219, 220, 225);
+}
+.bor-top {
+	border-top: 1px solid rgb(219, 220, 225);
+}
+ul, ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+h1,h2,h3,h4 {
+	font-weight: 700;
+}
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+.p-15 {
+	padding: 0 15px;
+}
+.bg-grey {
+	background: #F7F8FA;
+}
+.icon-yellow svg {
+	color: var(--brand-color-yellow);
+}
+.icon-purple .fa-home {
+	color: var(--brand-color-purple);
+}
+.text-right {
+	text-align: right;
+}
+.filterbtn:focus {
+	background: #EBF2FE;
+	outline: 1px solid #307DF6;
+	color: #307DF6;
+}
+.innerWrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.innerWrapper > div {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-ms-flex: 1;  /* IE 10 */  
+  	flex: 1;
+	min-height: 100vh;
+	height: 100%;
+	max-height: 100vh;
+	overflow: hidden;
+}
+.innerWrapper h3 {
+	margin: 25px 0; 
+}
+.innerWrapper .formArea {
+	width: 100%;
+    padding: 0 7rem;
+}
+.innerWrapper form .form-group {
+	margin-bottom: 30px;
+	position: relative;
+}
+.innerWrapper form .form-control {
+    height: 42px;
+    border-radius: .4rem;
+}
+.innerWrapper form .errormsg {
+	color: #F63058;
+    font-size: .8rem;
+    padding: .5rem 0;
+    display: none;
+}
+.innerWrapper form input.error {
+	border-color: #F63058;
+	background-color: #FEF1F4;
+}
+.btn {
+	display: block;
+	width: 100%;
+	background: var(--brand-color-blue);
+	color: #fff;
+	margin: 20px 0;
+	font-weight: 600;
+	font-size: .875rem;
+	padding: .6rem .75rem;
+}
+.btn:hover {
+	color: #fff;
+}
+.innerWrapper form .form-check-label {
+	color: var(--brand-color-blue);
+}
+.innerWrapper h3 span {
+	display: block;
+	font-size: .875rem;
+	font-weight: 400;
+	padding: .5rem 0;
+}
+.area-left {
+	position: relative;
+}
+.area-left .fGalleryText {
+	position: absolute;
+    top: 5%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+}
+.area-left .fGalleryText h3 {
+	color: #fff;
+}
+header {
+	padding: .5rem 1rem;
+}
+header .top-icons {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+header .top-icons li {
+	padding: 0 .5rem;
+}
+.btn-icon {
+	margin: 0;
+	padding: .25rem .5rem;
+	background: transparent;
+	border: 1px solid #E1E1E1;
+	color: #7F8292;
+	transition: .6s all;
+}
+header .top-icons button.btn-icon:hover {
+    background: rgb(226, 230, 240);
+}
+.address-bar,
+.inboxWrap {
+	background: rgb(255, 255, 255);
+    border: 1px solid rgb(225, 225, 225);
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 5px;
+}
+.address-bar span {
+	/*font-size: .875rem;*/
+	padding: 0 .5rem;
+}
+.address-bar .innerBar {
+	display: flex;
+    justify-content: space-evenly;
+}
+.address-bar .innerBar > div {
+    border-radius: 6px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+.address-bar .innerBar > div.icon {
+	background: rgb(241, 243, 249);
+}
+.address-bar .innerBar > div.active {
+	background: #E6EBFE;
+}
+.inboxWrap .resizeableDiv {
+	width: 45%;
+    resize: horizontal;
+    -webkit-box-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    border-right: 1px solid #E1E1E1;
+}
+
+.inboxMails .mails {
+	display: none;
+}
+.inboxMails .mails.show {
+	display: block;
+}
+.inboxMails li {
+    padding: 20px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    transition: 0.5s all;
+}
+.inboxMails .middle a {
+	font-weight: 700;
+    position: relative;
+    color: rgb(57, 57, 57);
+}
+.inboxMails li img {
+    width: 50px;
+    height: 50px;
+}
+.inboxMails .middle {
+	padding: 0 15px;
+}
+.inboxMails .middle .head span {
+	font-size: .813rem;
+}
+.inboxMails .desc p {
+	font-weight: 600;
+}
+.inboxMails .desc a {
+	color: var(--brand-color-blue);
+}
+.filter {
+	position: relative;
+}
+.filter .filter-div {
+	position: absolute;
+    width: 500px;
+    right: 7px;
+    top: 131%;
+    background: #fff;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px -13px rgba(0,0,0,0.75);
+    padding: 1rem 1rem;
+    border: 1px solid rgb(219, 220, 225);
+    border-radius: 8px;
+    z-index: 999;
+    display: none;
+}
+.filter .filter-div.inboxFilter {
+	right: -90px;
+}
+.filter .button-group {
+	display: inline-block;
+	width: 100%;
+}
+.filter .button-group a.btn {
+	float: left;
+	background: transparent;
+	border: 1px solid rgb(219, 220, 225);
+	color: rgb(189 189 189);
+}
+.filter .filter-div label {
+	font-size: 0.875rem;
+}
+.filter .button-group button.btn {
+	float: right;
+}
+.filter .button-group .btn {
+	width: auto;
+	margin-bottom: 0;
+	padding: 0.5rem 2rem;
+}
+.filter .filter-div p {
+	font-weight: 700;
+}
+.filter .filter-div .form-group {
+	margin: 20px 0;
+}
+.filter .filter-div select > option:hover {
+	background: rgb(219, 220, 225);
+}
+.chat-chain {
+	border-left: 4px solid var(--brand-color-blue);
+	background: #F7F8FA;
+	display: none;
+}
+.chat-chain li {
+	background: #F7F8FA;
+}
+.mail-chain-icons ul {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 15px;
+}
+.mail-chain-icons ul li {
+	padding: 0;
+	margin-left: 5px;
+	border-bottom: none;
+	position: relative;
+}
+.mail-chain-icons > ul > li > a {
+	height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	border: 1px solid #d2d1d1;
+    background: #fff;
+    border-radius: 6px;
+	color: var(--brand-color-anchor);
+}
+.mail-chain-icons ul li.more-options ul {
+	position: absolute;
+	display: block;
+	margin-bottom: 0;
+	top: 120%;
+	right: 0;
+	width: 200px;
+    background: #fff;
+    border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 37px -27px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 37px -27px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 37px -27px rgba(0,0,0,0.75);
+	border: 1px solid #d2d1d1;
+	padding: 0.3rem;
+	display: none;
+}
+.mail-chain-icons ul li.more-options ul li {
+	margin-left: 0;
+	background: transparent;
+	padding: 0.3rem 0.2rem;
+	background: transparent;
+	border-radius: 10px;
+	transition: 0.5s all;
+}
+.mail-chain-icons ul li.more-options ul li a {
+	color: var(--brand-color-anchor);
+}
+.mail-chain-icons ul li.more-options ul li:hover {
+	background: var(--brand-color-hover);
+}

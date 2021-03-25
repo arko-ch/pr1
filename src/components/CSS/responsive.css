@@ -1,0 +1,43 @@
+@media (min-width: 993px) {
+}
+@media (max-width: 992px) {
+	.innerWrapper {
+	    display: block;
+	}
+	.fPageLogin .innerWrapper > div,
+	.fPageAccountRecover .innerWrapper > div {
+		width: 100%;
+		height: auto;
+		min-height: 1px;
+	}
+	.innerWrapper > div.area-left {
+		background: #0c4380;
+	}
+	.area-left .fGalleryText {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+
+}
+@media (max-width: 580px) {
+	.innerWrapper .formArea {
+	    padding: 0 2rem;
+	}
+}
+@media (max-width: 380px) {
+	.innerWrapper form .form-check {
+		text-align: center;
+	}
+	.innerWrapper form .form-check a {
+		float: none !important;
+		display: block;
+		padding: 0.5rem 0;
+	}
+	.area-whole {
+		padding: 0 1rem;
+	}
+}
+@media (max-width: 480px) {
+	
+}

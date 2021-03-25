@@ -1,0 +1,48 @@
+.mailBodyWrap {
+	padding: 1rem 0;
+}
+.inboxWrap {
+	overflow: auto;
+    padding: 0;
+   	margin: 1rem 0;
+}
+.buttonDiv {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.buttonDiv .btn {
+	width: auto;
+	margin-left: .5rem;
+} 
+.buttonDiv .btn-icon {
+	background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 42px;
+    height: 42px;
+    color: rgb(109, 112, 130);
+    border: 1px solid rgb(225, 225, 225) !important;
+}
+.resizeableDiv .nav-link {
+	color: #000;
+	position: relative;
+}
+.resizeableDiv .nav-item {
+	position: relative;
+}
+.resizeableDiv .nav-link.active {
+	color: var(--brand-color-blue);
+	font-weight: 700;
+}
+.resizeableDiv .nav-link.active:after {
+	content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    bottom: -51%;
+    left: 15%;
+    right: 15%;
+    background: var(--brand-color-blue);
+    border-radius: 10px 10px 0 0;
+}

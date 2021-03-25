@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../CSS/Login.css';
+import './CSS/Login.css';
 import slice1 from '../images/Slice1.png';
-import '../CSS/Common.css';
+import './CSS/Common.css';
 import Login from 'app/auth/Login';
 
 class LoginContainer extends Component {

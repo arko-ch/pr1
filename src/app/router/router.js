@@ -117,7 +117,7 @@ export function AllRoutes() {
       {filteredRoutes.map((route, i) => {
         return <Route exact key={i} {...route} />;
       })}
-      <Route exact path="/" render={() => <Redirect to="/mailbox" />} />
+      <Route exact path="/" render={() => <Redirect to="/inbox" />} />
     </Fragment>
   );
 }

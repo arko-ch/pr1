@@ -1,11 +1,11 @@
 import React from 'react';
-
+import CheckMail from '../../../src/components/Inbox';
 export default {
-  prefix: '/assignemail',
+  prefix: '/inbox',
   routes: [
     {
       path: '/',
-      component: React.lazy(() => import('./AssignEmail')),
+      component: React.lazy(() => import('../../../src/components/Inbox')),
       permissions: {
         authenticated: ['all']
       }
